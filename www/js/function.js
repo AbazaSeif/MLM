@@ -52,7 +52,7 @@ $$(document).on('pageInit', function(e) {
     case 'notification':
       notificationAction();
       break;
-      case 'product':
+    case 'product':
       retrieveProducts();
       break;
   }
@@ -92,6 +92,50 @@ function restoreTablePosition() {
     $$('table').scrollTo(0, 0, 0, null);
   });
 }
+
+///////////Register
+$$('.btn-view-package').on('click', function() {
+  var html = '<div class="popup product-popup" align="center">' +
+    '<h2>Package Information</h2>' +
+      '<div class="list-block" align="right">' +
+      '<span><a href="#" class="close-product-popup" style="margin-right: 15px">Close</a></span>' +
+    '<ul class="product-list">';
+
+  var context = {
+    product: [{
+      name: 'Silver',
+      price: '250.00',
+      benefit: '7',
+      information: 'Maximum BV forward per day: 5000<br/>Maximum BV level: 5 level'
+    }, {
+      name: 'Gold',
+      price: '800.00',
+      benefit: '8',
+      information: 'Maximum BV forward per day: 15000<br/>Maximum BV level: 6 level'
+    }, {
+      name: 'Platinum',
+      price: '1500.00',
+      benefit: '9',
+      information: 'Maximum BV forward per day: 25000<br/>Maximum BV level: 7 level'
+    }, {
+      name: 'Precious Diamond',
+      price: '2500.00',
+      benefit: '10',
+      information: 'Maximum BV forward per day: 35000<br/>Maximum BV level: 8 level'
+    }],
+  };
+  productArray = context['product'];
+  console.log(productArray[0]['name']);
+  html += compiledProductTemplate(context);
+  html += '</ul>' +
+  '<span><a href="#" class="close-product-popup" style="margin-right: 15px">Close</a></span>' +
+  '</div>' +
+  '</div>';
+  app.popup(html);
+  $$('.close-product-popup').on('click', function(){
+    app.closeModal('.product-popup');
+  });
+});
 
 ///////////////////////HomePage---------
 function initEvent() {
@@ -479,20 +523,20 @@ function retrieveProducts() {
       benefit: '7',
       information: 'Maximum BV forward per day: 5000<br/>Maximum BV level: 5 level'
     }, {
-        name: 'Gold',
-        price: '800.00',
-        benefit: '8',
-        information: 'Maximum BV forward per day: 15000<br/>Maximum BV level: 6 level'
+      name: 'Gold',
+      price: '800.00',
+      benefit: '8',
+      information: 'Maximum BV forward per day: 15000<br/>Maximum BV level: 6 level'
     }, {
-        name: 'Platinum',
-        price: '1500.00',
-        benefit: '9',
-        information: 'Maximum BV forward per day: 25000<br/>Maximum BV level: 7 level'
+      name: 'Platinum',
+      price: '1500.00',
+      benefit: '9',
+      information: 'Maximum BV forward per day: 25000<br/>Maximum BV level: 7 level'
     }, {
-        name: 'Precious Diamond',
-        price: '2500.00',
-        benefit: '10',
-        information: 'Maximum BV forward per day: 35000<br/>Maximum BV level: 8 level'
+      name: 'Precious Diamond',
+      price: '2500.00',
+      benefit: '10',
+      information: 'Maximum BV forward per day: 35000<br/>Maximum BV level: 8 level'
     }],
   };
   var html = compiledProductTemplate(context);

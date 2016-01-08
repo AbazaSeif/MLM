@@ -109,6 +109,8 @@ function submitRegistration() {
   var email = $$('input[name="regEmail"]').val();
   var password = $$('input[name="regPassword"]').val();
   var walletPassword = $$('input[name="walletPassword"]').val();
+  var selectedPackage = $$('#package').val();
+  console.log(productArray[selectedPackage]);
 
   if (isEmpty(referral)) {
     promptError('Invalid referral');
@@ -135,6 +137,7 @@ function submitRegistration() {
       walletPassword: walletPassword
     };
     console.log(dataObj);
+    gap.buyNow(subtotal, shipping, tax, amount, currency, shortDescription, intent);
 
     $$('input[name="referral"]').val('');
     $$('input[name="name"]').val('');

@@ -23,7 +23,7 @@ var gap = {
   initPaymentUI: function() {
     var clientIDs = {
       "PayPalEnvironmentProduction": "YOUR_PRODUCTION_CLIENT_ID",
-      "PayPalEnvironmentSandbox": "YOUR_SANDBOX_CLIENT_ID"
+      "PayPalEnvironmentSandbox": "Ae52tvk1TSc8ln8Vb7n3L-Y1i-EOG57xAjczmT39ahqoGQcjCJEqQR8Fbiy8s6IbBVQCeikcGBDPA2br"
     };
     PayPalMobile.init(clientIDs, gap.onPayPalMobileInit);
 
@@ -34,11 +34,14 @@ var gap = {
   onAuthorizationCallback: function(authorization) {
     console.log("authorization: " + JSON.stringify(authorization, null, 4));
   },
-  createPayment: function() {
+  createPayment: function(subtotal, shipping, tax, amount, currency, shortDescription, intent) {
     // for simplicity use predefined amount
     // optional payment details for more information check [helper js file](https://github.com/paypal/PayPal-Cordova-Plugin/blob/master/www/paypal-mobile-js-helper.js)
-    var paymentDetails = new PayPalPaymentDetails("50.00", "0.00", "0.00");
-    var payment = new PayPalPayment("50.00", "USD", "Awesome Sauce", "Sale", paymentDetails);
+    //function PayPalPaymentDetails(subtotal, shipping, tax) {
+     //function PayPalItem(name, quantity, price, currency, sku) {
+     //function PayPalPayment(amount, currency, shortDescription, intent, details) {
+    var paymentDetails = new PayPalPaymentDetails(subtotal, shipping, tax);
+    var payment = new PayPalPayment(amount, currency, shortDescription, intent, paymentDetails);
     return payment;
   },
   configuration: function() {
@@ -81,6 +84,9 @@ var gap = {
   },
   onUserCanceled: function(result) {
     console.log(result);
+  },
+  buyNow: function(subtotal, shipping, tax, amount, currency, shortDescription, intent) {
+    PayPalMobile.renderSinglePaymentUI(gap.createPayment(subtotal, shipping, tax, amount, currency, shortDescription, intent), gap.onSuccesfulPayment, gap.onUserCanceled);
   }
 };
 
@@ -99,3 +105,5 @@ var productTemplate = $$('#productList').html();
 var compiledProductTemplate = Template7.compile(productTemplate);
 
 var serverUrl = 'http://www.urewardz.com/script/';
+
+var productArray;
