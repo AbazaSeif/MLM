@@ -1,0 +1,100 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="center">Wallet Transfer</div>
+  </div>
+</div>
+<div data-page="wallet_transfer" class="page">
+  <div class="page-content">
+    <div class="content-block">
+      <div class="content-block-inner">
+        <div>** Minimum transfer amount: RM 100</br>** Admission fee: 0.5%</div>
+        <div class="list-block">
+          <ul>
+            <li class="transfer-target">
+              <div class="row no-gutter">
+                <label class="label-checkbox item-content col-50">
+                  <input type="checkbox" value="to-own">
+                  <div class="item-media">
+                    <i class="icon icon-form-checkbox"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">Own</div>
+                  </div>
+                </label>
+                <label class="label-checkbox item-content col-50">
+                  <input type="checkbox" value="to-others" checked="checked">
+                  <div class="item-media">
+                    <i class="icon icon-form-checkbox"></i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">Others</div>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="to-username-id">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <input type="text" placeholder="To: Email or ID">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-input">
+                  <input type="text" placeholder="Amount. Minimum 100">
+                </div>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <textarea type="text" placeholder="Short description"></textarea>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <select id="fromWallet">
+                      <option selected disabled>From wallet</option>
+                        <option value="wallet-cash">Cash wallet</option>
+                      <option value="wallet-register">Register wallet</option>
+                      <option value="wallet-product">Product wallet</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <select id="toWallet">
+                      <option selected disabled>To wallet</option>
+                        <option value="wallet-cash">Cash wallet</option>
+                      <option value="wallet-register">Register wallet</option>
+                      <option value="wallet-product">Product wallet</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p>
+            <a href="#" class="button button-fill btn-transfer-confirm">Confirm</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

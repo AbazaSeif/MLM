@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" type="text/css" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" type="text/css" href="css/framework7.ios.colors.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <title>Membership System</title>
+</head>
+
+<body>
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-reveal">
+    <div class="list-block accordion-list" align="center">
+      <ul>
+        <li>
+          <a href="profile_summary.html" class="item-inner panel-profile-background">
+            <div class="left-panel-profile" align="center">
+              <div class="panel-profile-div">
+                <img class="panel-profile-pic" />
+              </div>
+              <div class="no-gutter">
+                <span class="panel-profile-name">Hello World</span>
+                <span class="panel-profile-grade-text">VIP 9</span>
+              </div>
+              <div class="no-gutter">
+                <span class="panel-profile-id">ID: 000001</span>
+                <span class="panel-profile-grade"></span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="home.html" class="item-link selected-panel">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-home"></i>
+                <div class="item-title">Home</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="currency.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-dollar"></i>
+                <div class="item-title">Currency Rate</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-user"></i>
+              <div class="item-title">My Profile</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="profile_summary.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Profile Summary
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="profile_edit_bank_info.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Edit Bank Info
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="profile_upgrade.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Upgrade
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="profile_security.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Password &amp; Security
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-tree"></i>
+              <div class="item-title">Organization</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="org_my_geneology.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          My Geneology
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="org_direct_downlines.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Direct Downlines
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-line-chart"></i>
+              <div class="item-title">Sales &amp; Redeem</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="sales_register_downline.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Register Downline
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="sales_activate_downline.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Activate Downline
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="sales_redeem_product.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Redeem Product
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="sales_redeem_gift.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Redeem Gift
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!--li>
+                  <a href="sales_dividend_lot.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Unit Dividend Lot
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li!-->
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-google-wallet"></i>
+              <div class="item-title">Wallet</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="wallet_summary.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Wallet Summary
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="wallet_transfer.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Wallet Transfer
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="wallet_history.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Wallet History
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-exchange"></i>
+              <div class="item-title">Transactions</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="transaction_registration.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Registration
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="transaction_member_purchase.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Member Purchase
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="transaction_redemption.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Redemption
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="transaction_upgrade.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Upgrade
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="transaction_my_order.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          My Order
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li-->
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-history"></i>
+              <div class="item-title">History</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="history_transaction.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Transaction Records
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="history_bv.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          BV Records
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="history_downline.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Downline Registration
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-sticky-note"></i>
+              <div class="item-title">Report</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="report_reward.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Reward Summary
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="report_commission.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Commission Summary
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="report_bonus.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Bonus Statement
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li-->
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <i class="fa fa-external-link"></i>
+              <div class="item-title">Withdrawal</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="withdrawal_request.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Withdrawal Request
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="withdrawal_history.html" class="item-content item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">
+                          Withdrawal History
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="announcement.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-newspaper-o"></i>
+                <div class="item-title">News &amp; Announcement</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="notification.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-bell"></i>
+                <div class="item-title">Notifications</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="product.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-cart-plus"></i>
+                <div class="item-title">Product / Package</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="about_us.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-info"></i>
+                <div class="item-title">About Us</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="contact_us.html" class="item-link">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-phone"></i>
+                <div class="item-title">Contact Us</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-link link-log-out">
+            <div class="item-content">
+              <div class="item-inner remove-arrow">
+                <i class="fa fa-sign-out"></i>
+                <div class="item-title">Logout</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="views">
+    <div class="view view-main">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+          </div>
+          <div class="center">Home</div>
+        </div>
+      </div>
+      <div class="pages navbar-through toolbar-through">
+        <div data-page="home" class="page home-page">
+          <div class="page-content">
+            <div class="swiper-container event-swiper">
+              <div class="swiper-wrapper">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="content-block-title">Wallet Details</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Cash</div>
+                      <div class="item-title label wallet-cash">1</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Register</div>
+                      <div class="item-title label wallet-register">12</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Product</div>
+                      <div class="item-title label wallet-product">123</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Travel</div>
+                      <div class="item-title label wallet-travel">1234</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Discount</div>
+                      <div class="item-title label wallet-discount">12345</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">Referral Details</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Total Sponsored</div>
+                      <div class="item-title label referral-total-sponsored">123</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Total Direct Downlines</div>
+                      <div class="item-title label referral-total-direct">1234</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Total Team Downlines</div>
+                      <div class="item-title label referral-total-team">12345</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">Earning Details</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Carry Forward BV</div>
+                      <div class="item-title label earn-forward-bv">1</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Today Team BV</div>
+                      <div class="item-title label earn-team-bv">12</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Dividend Earned</div>
+                      <div class="item-title label earn-dividend-earned">123</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Next Dividend Due</div>
+                      <div class="item-title label earn-dividend-due">1234</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Pending Withdrawal</div>
+                      <div class="item-title label earn-pending-withdrawal">12345</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--div class="toolbar app-toolbar">
+        <div class="toolbar-inner">
+          <a href="#" class="link">
+            <div><i class="fa fa-home"></i>Home</div>
+          </a>
+          <a href="#" data-popover=".popover-notification" class="link open-popover">
+            <div><i class="fa fa-bell"></i>Notification</div>
+          </a>
+          <a href="#" data-popover=".popover-share" class="link open-popover">
+            <div><i class="fa fa-share"></i>Share</div>
+          </a>
+        </div>
+      </div-->
+    </div>
+  </div>
+  <div class="popover popover-share">
+    <div class="popover-inner">
+      <div class="list-block">
+        <ul>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-twitter"></i>Twitter</a></li>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-google-plus"></i>Google+</a></li>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-facebook"></i>Facebook</a></li>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-wechat"></i>WeChat</a></li>
+          <li><a href="#" class="list-button item-link"><i class="fa fa-whatsapp"></i>WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="popover popover-notification">
+    <div class="popover-inner">
+      <div class="list-block">
+        <ul class="toolbar-popover-notification">
+          <li>
+            <div class="item-inner">
+              <a>Message 1</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <a>Message 2</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <a>Message 3</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <a>Message 4</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <a>Message 5</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <a class="see-all">See all</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="login-screen">
+    <div class="view">
+      <div class="page">
+        <div class="page-content login-screen-content" align="center">
+          <div>
+            <img class="login-screen-logo" />
+          </div>
+          <div class="login-screen-title">Membership System</div>
+          <form>
+            <div class="list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <i class="fa fa-user"></i>
+                    <div class="item-input">
+                      <input type="email" name="email" placeholder="Email">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <i class="fa fa-lock"></i>
+                    <div class="item-input">
+                      <input type="password" name="password" placeholder="Password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block row">
+              <a href="#" class="button button-fill col-50 btn-register">Register</a>
+              <a href="#" class="button button-fill col-50 btn-sign-in">Sign In</a>
+            </div>
+            <a href="#" class="item-link list-button btn-forget-pw">Forget Password?</a>
+            <div class="list-block-label">Happ New Year 2016</div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="popup register-screen" align="center">
+    <p style="font-size: large; font-weight: bold;">Registration</p>
+    <div class="content-block">
+      <div class="list-block">
+        <ul>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" name="referral" placeholder="** Referral ID/Email">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" name="name" placeholder="** Name as NRIC">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" name="nric" placeholder="** NRIC No.">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" name="username" placeholder="** Username">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="email" name="regEmail" placeholder="** Email">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="password" name="regPassword" placeholder="Password">
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="password" name="walletPassword" placeholder="Wallet Password">
+              </div>
+            </div>
+          </li>
+        </ul>
+        <span style="font-size: small">** Information cannot be change after register
+          <br/>Customer service 00-0000000</span>
+      </div>
+      <div class="row">
+        <a href="#" class="button button-fill col-50 btn-register-confirm">Register</a>
+        <a href="#" class="button button-fill col-50 btn-cancel-register">Cancel</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/template7" id="directDownlineCard">
+    {{#each directDownline}}
+    <div class="card direct-downline-card" id="{{id}}" name="{{name}}" onclick="viewDownline(this);">
+      <div class="card-header">{{name}} ({{id}})</div>
+      <div class="card-content">
+        <div class="card-content-inner">
+          <div>Sponsor ID:
+            <span>{{sponsorId}}</span>
+          </div>
+          <div>First BV:
+            <span>{{firstBv}}</span>
+          </div>
+          <div>Second BV:
+            <span>{{secondBv}}</span>
+          </div>
+          <div>Third BV:
+            <span>{{thirdBv}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer row">
+        <div class="col-20">{{status}}</div>
+        <div class="col-25">Level {{level}}</div>
+        <div class="col-50">{{package}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script type="text/template7" id="productCard">
+    {{#each product}}
+    <div class="card product-card" id="{{id}}" onclick="viewProduct(this);">
+      <div style="background-image:url({{imageUrl}})" valign="bottom" class="card-header color-white no-border">
+        <span class="card-title">{{title}}</span>
+      </div>
+      <div class="card-content">
+        <div class="card-content-inner">
+          <p class="card-description">{{description}}</p>
+        </div>
+      </div>
+      <div class="card-footer row">
+        <div class="col-50">{{productBV}} BV</div>
+        <div class="col-50">RM {{productPrice}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script type="text/template7" id="giftCard">
+    {{#each gift}}
+    <div class="card product-card" id="{{id}}" onclick="viewGift(this);">
+      <div style="background-image:url({{imageUrl}})" valign="bottom" class="card-header color-white no-border">
+        <span class="card-title">{{title}}</span>
+      </div>
+      <div class="card-content">
+        <div class="card-content-inner">
+          <p class="card-description">{{description}}</p>
+        </div>
+      </div>
+      <div class="card-footer row">
+        <div class="col-50">{{productBV}} BV</div>
+        <div class="col-50">RM {{productPrice}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script type="text/template7" id="newsAnnouncementList">
+    {{#each newsAnnouncement}}
+    <li>
+      <a href="#" onclick="viewNewsAnnouncement(this)" id="{{id}}" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">{{from}}</div>
+            <div class="item-after">{{date}}</div>
+          </div>
+          <div class="item-subtitle">{{title}}</div>
+          <div class="item-text">{{description}}</div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <script type="text/template7" id="notificationList">
+    {{#each notification}}
+    <li>
+      <a href="#" onclick="viewNotification(this)" id="{{id}}" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">{{title}}</div>
+          </div>
+          <div class="item-text">{{description}}</div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <script type="text/template7" id="productList">
+    {{#each product}}
+    <li>
+      <br/>
+      <div class="item-content">
+        <div class="item-inner">
+          <table style="display: inline-table">
+            <thead>
+              <th>{{name}}</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Price: RM {{price}}</td>
+              </tr>
+              <tr>
+                <td>Benefit: {{benefit}}%</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>{{information}}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </script>
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript">
+    gap.initialize();
+  </script>
+</body>
+
+</html>

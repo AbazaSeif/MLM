@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.member.app" version="1.0.0" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>Membership System Mobile App</name>
+  <description>
+    Membership System Mobile App Template
+  </description>
+  <author email="support@avtns.com" href="http://www.avtns.com">
+    Advance Technology Network Solutions (M) Sdn Bhd
+  </author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="orientation" value="portrait"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="disallowOverscroll" value="true"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="android-installLocation" value="auto"/>
+
+  <!--gap:plugin name="org.apache.cordova.battery-status"/>
+  <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.media-capture"/>
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.contacts"/>
+  <gap:plugin name="org.apache.cordova.device"/>
+  <gap:plugin name="org.apache.cordova.device-motion"/>
+  <gap:plugin name="org.apache.cordova.device-orientation"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
+  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file-transfer"/>
+  <gap:plugin name="org.apache.cordova.geolocation"/>
+  <gap:plugin name="org.apache.cordova.globalization"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.media"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.vibration"/-->
+
+  <icon src="icon.png"/>
+  <platform name="ios">
+    <icon height="57" src="img/ios/icon/icon.png" width="57"/>
+    <icon height="60" src="img/ios/icon/icon-60.png" width="60"/>
+    <icon height="120" src="img/ios/icon/icon-60@2x.png" width="120"/>
+    <icon height="72" src="img/ios/icon/icon-72.png" width="72"/>
+    <icon height="76" src="img/ios/icon/icon-76.png" width="76"/>
+    <icon height="152" src="img/ios/icon/icon-76@2x.png" width="152"/>
+    <icon height="29" src="img/ios/icon/icon-small.png" width="29"/>
+    <icon height="58" src="img/ios/icon/icon-small@2x.png" width="58"/>
+    <icon height="40" src="img/ios/icon/icon-40.png" width="40"/>
+    <icon height="80" src="img/ios/icon/icon-40@2x.png" width="80"/>
+  </platform>
+  <gap:splash src="splash.png"/>
+  <platform name="ios">
+    <gap:splash height="480" src="img/ios/splash/Default.png" width="320"/>
+    <gap:splash height="960" src="img/ios/splash/Default@2x.png" width="640"/>
+    <gap:splash height="1136" src="img/ios/splash/Default-568h@2x.png" width="640"/>
+    <gap:splash height="1024" src="img/ios/splash/Default-Portrait.png" width="768"/>
+    <gap:splash height="768" src="img/ios/splash/Default-Landscape.png" width="1024"/>
+    <gap:splash height="2048" src="img/ios/splash/Default-Portrait@2x.png" width="1536"/>
+    <gap:splash height="1536" src="img/ios/splash/Default-Landscape@2x.png" width="2048"/>
+  </platform>
+  <access origin="*"/>
+  <allow-navigation href="*"/>
+  <allow-intent href="*"/>
+  <platform name="android"/>
+</widget>

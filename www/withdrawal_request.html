@@ -1,0 +1,91 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="center">Request</div>
+  </div>
+</div>
+<div data-page="withdrawal_request" class="page">
+  <div class="page-content">
+    <div class="list-block">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <table style="margin: 20px 0">
+                <tbody>
+                  <tr>
+                    <td style="background-color: aliceblue;">
+                      Minimum amount
+                    </td>
+                    <td>
+                      50
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Maximum amount
+                    </td>
+                      <td style="background-color: aliceblue;">
+                      5000
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: aliceblue;">
+                      Admission fee
+                    </td>
+                    <td>
+                      1%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label">
+                Amount
+              </div>
+              <div class="item-input">
+                <input type='number' step='0.01' value='0.00' placeholder='0.00' />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title label">
+                From wallet
+              </div>
+              <div class="item-input">
+                <select id="withdraw-from-wallet">
+                  <option value="wallet-cash">
+                    Cash wallet
+                  </option>
+                  <option value="wallet-register">
+                    Register wallet
+                  </option>
+                  <option value="wallet-product">
+                    Product wallet
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <a href="#" style="width: 100%" class="button button-fill btn-withdraw-confirm">Confirm</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

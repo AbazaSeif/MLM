@@ -1,0 +1,30 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="center">Notification</div>
+  </div>
+</div>
+<div data-page="notification" class="page">
+  <div class="page-content infinite-scroll">
+    <div class="list-block media-list">
+      <ul class="news-announcement-list">
+        <li>
+          <a href="#" onclick="viewNotification(this)" id="{{id}}" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title-row">
+                <div class="item-title">{{title}}</div>
+              </div>
+              <div class="item-text">{{description}}</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  <!-- Preloader -->
+  <div class="infinite-scroll-preloader" style="display:none">
+    <div class="preloader"></div>
+  </div>
+  </div>
+</div>

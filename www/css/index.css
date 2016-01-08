@@ -1,0 +1,250 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+body {
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color: #E4E4E4;
+  background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+  background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+  background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+  background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4));
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.panel-left {
+  background-color: transparent;
+  color: cornflowerblue;
+}
+.panel-profile-background {
+  background-color: #2c2b2c;
+  color: white;
+}
+.left-panel-profile {
+  min-height: 30vmax !important;
+  width: 100%;
+}
+.panel-left .list-block {
+  margin: 0;
+  padding: 0;
+}
+.panel-left .list-block .item-inner {
+  -webkit-justify-content: initial;
+  justify-content: initial;
+}
+.panel-left .list-block .fa {
+  min-width: 4vmax;
+  left: 0;
+  margin-right: 5px;
+}
+.selected-panel {
+  background-color: darkgray !important;
+  color: white !important;
+  pointer-events: none;
+}
+.panel-profile-pic {
+  margin-top: 2vmax;
+  min-height: 20vmax;
+  max-height: 20vmax;
+  height: 20vmax;
+  width: 20vmax;
+  background-image: url(../img/user.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px groove;
+}
+.panel-profile-name {
+  margin-top: 1vmax;
+}
+.panel-profile-id {
+  margin-top: 1vmax;
+}
+.panel-profile-grade {
+  min-height: 25px;
+  max-height: 25px;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/level1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  margin-left: 5px;
+}
+.panel-profile-grade-text {
+  margin-left: 5px;
+}
+.no-gutter {
+  -webkit-justify-content: initial;
+  justify-content: initial;
+  /*display: initial;*/
+}
+.accordion-item-content .item-inner {
+  background-image: none !important;
+}
+.remove-arrow {
+  background-image: none !important;
+}
+.popover-share .fa {
+  margin-right: 20px;
+}
+.app-toolbar .fa {
+  margin-right: 5px;
+}
+.popover {
+  width: 80%;
+}
+.see-all {
+  text-align: center;
+  width: 100%;
+}
+.login-screen-logo {
+  content: url(../img/logo.png);
+  /*margin-top: 10%;*/
+  max-width: 50vmax;
+}
+.login-screen-title {
+  margin: 10px 0 !important;
+}
+.login-screen-content .list-block {
+  margin: 10px 0;
+}
+.login-screen .list-block .fa {
+  margin: 0 20px;
+}
+
+/*.btn-register{
+  text-align: right !important;
+}
+.btn-sign-in{
+  text-align: left !important;
+}*/
+
+.btn-forget-pw {
+  font-size: small;
+}
+.hidden {
+  display: none;
+}
+.home-page .list-block .item-title.label {
+  width: auto;
+  max-width: 65%;
+}
+.event-swiper {
+  width: 100%;
+  min-height: 36%;
+  height: 36%;
+  max-height: 36%;
+}
+.event-slide {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home-page .content-block-title {
+  margin-top: 18px;
+}
+.home-page .list-block {
+  margin-bottom: 0;
+}
+.currency-page td {
+  text-align: center;
+}
+.info-list .fa {
+  min-width: 30px;
+}
+.geneology-tree-line {
+  width: 100%;
+  content: url(/img/treeline.png);
+}
+.geneology-block {
+  border: 1px lightgray dashed;
+  height: 100%;
+  white-space: inherit;
+  padding: 4px;
+}
+.geneology-user-icon {
+  font-size: 40px;
+}
+.direct-downline-card .card-header, .direct-downline-card .card-footer {
+  min-height: auto;
+  padding: 8px;
+}
+.direct-downline-card .card-content-inner {
+  padding: 8px 15px;
+}
+.product-card .card-header {
+  height: 37vw;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+.product-card .card-title {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-card .card-content-inner {
+  padding: 4px 9px;
+}
+.product-card .card-description {
+  margin-top: 0.5em;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 4.5em;
+  line-height: 1.5em;
+}
+.product-card .card-footer {
+  padding: 2.5px 10px;
+}
+.card-ori-price {
+  font-size: smaller;
+  text-decoration: line-through;
+}
+.card-offer-price {
+  font-size: large;
+}
+table {
+  table-layout: fixed;
+  display: block;
+  border-collapse: collapse;
+  overflow: scroll;
+  max-width: 100%;
+  min-width: 100%;
+}
+thead {
+  background-color: yellowgreen;
+  color: white;
+}
+th, td {
+  border: 1px lightgray solid;
+  width: 100%;
+  white-space: normal;
+  padding: 3px 5px;
+}
+.disable-it {
+  pointer-events: none;
+}
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}

@@ -1,0 +1,26 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="center">Gift Redemption</div>
+  </div>
+</div>
+<div data-page="sales_redeem_gift" class="page">
+  <div class="page-content">
+    <div class="card product-card" id="{{id}}" onclick="viewGift(this);">
+      <div style="background-image:url(img/logo.png)" valign="bottom" class="card-header color-white no-border">
+        <span class="card-title">Helo</span>
+      </div>
+      <div class="card-content">
+        <div class="card-content-inner">
+          <p class="card-description">{{description}}</p>
+        </div>
+      </div>
+      <div class="card-footer row">
+          <div class="col-50">{{productBV}} BV</div>
+          <div class="col-50">RM {{productPrice}}</div>
+      </div>
+    </div>
+  </div>
+</div>
